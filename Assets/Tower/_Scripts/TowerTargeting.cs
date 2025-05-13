@@ -14,6 +14,7 @@ public class TowerTargeting : SaiMonoBehaviour
     [SerializeField] protected EnemyCtrl nearest;
     public EnemyCtrl NearCtrl => nearest;
     
+    [SerializeField] protected LayerMask obstacleLayerMask;
     [SerializeField] protected List<EnemyCtrl> enemies = new();
 
     protected virtual void FixedUpdate()
@@ -79,12 +80,14 @@ public class TowerTargeting : SaiMonoBehaviour
         //Debug.Log(transform.name + ": LoadSphereCollider() ", gameObject);
     }
 
-    protected virtual void FindNearest()
+    protected virtual void FindNearest()//Mtieu gan nhat
     {
         float nearestDistance = Mathf.Infinity;
         float enemyDisTance;
         foreach (EnemyCtrl enemyCtrl in enemies)
         {
+            if (!this.CanSeeTarget(enemyCtrl)) continue;
+                
             enemyDisTance = Vector3.Distance(transform.position, enemyCtrl.transform.position);
             if (enemyDisTance < nearestDistance)
             {
@@ -92,6 +95,24 @@ public class TowerTargeting : SaiMonoBehaviour
                 nearest = enemyCtrl;
             }
         }
+    }
+
+    protected virtual bool CanSeeTarget(EnemyCtrl target)
+    {
+        Vector3 directionToTarget = target.transform.position - transform.position;
+        float distanceToTarget = directionToTarget.magnitude;
+        
+        if (Physics.Raycast(transform.position, directionToTarget, out RaycastHit hitInfo, distanceToTarget, obstacleLayerMask))
+        {
+            Vector3 directionToCollider = hitInfo.point - transform.position;
+            float distanceToCollider= directionToCollider.magnitude;
+            
+            Debug.DrawRay(transform.position, directionToCollider.normalized * distanceToCollider, Color.red);
+            return false;
+        }
+        
+        Debug.DrawRay(transform.position, directionToTarget.normalized * distanceToTarget, Color.green);
+        return true;
     }
     
     protected virtual void RemoveDeadEnemy()
