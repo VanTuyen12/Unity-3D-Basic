@@ -19,8 +19,9 @@ public class TowerTargeting : SaiMonoBehaviour
     protected virtual void FixedUpdate()
     {
         this.FindNearest();
+        this.RemoveDeadEnemy();
     }
-
+    
     protected virtual void OnTriggerEnter(Collider collider)
     {
         this.AddEnemy(collider);
@@ -42,15 +43,13 @@ public class TowerTargeting : SaiMonoBehaviour
     {
         if (collider.name != Const.TOWER_TARGETABLES) return;
         EnemyCtrl enemyCtrl = collider.transform.parent.GetComponent<EnemyCtrl>();
+        if(enemyCtrl.EnenyDamageRecever.IsDead()) return;
+        
         this.enemies.Add(enemyCtrl);
-
-        //Debug.Log("AddEnemy: " + collider.name);
     }
 
     protected virtual void RemoveEnemy(Collider collider)
     {
-        //Debug.Log("RemoveEnemy: " + collider.transform);
-
         foreach (EnemyCtrl enemyCtrl in enemies)
         {
             if (collider.transform.parent.name == enemyCtrl.name)
@@ -75,7 +74,7 @@ public class TowerTargeting : SaiMonoBehaviour
         if (this.sphereCollider != null) return;
         this.sphereCollider = GetComponent<SphereCollider>();
         this.sphereCollider.isTrigger = true;
-        this.sphereCollider.radius = 9f;
+        this.sphereCollider.radius = 13f;
 
         //Debug.Log(transform.name + ": LoadSphereCollider() ", gameObject);
     }
@@ -91,6 +90,19 @@ public class TowerTargeting : SaiMonoBehaviour
             {
                 nearestDistance = enemyDisTance;
                 nearest = enemyCtrl;
+            }
+        }
+    }
+    
+    protected virtual void RemoveDeadEnemy()
+    {
+        foreach (EnemyCtrl enemyCtrl in enemies)
+        {
+            if (enemyCtrl.EnenyDamageRecever.IsDead())
+            {
+                if(enemyCtrl == this.nearest) this.nearest = null;
+                this.enemies.Remove(enemyCtrl);
+                return;
             }
         }
     }

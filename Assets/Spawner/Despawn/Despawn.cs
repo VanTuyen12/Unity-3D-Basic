@@ -7,8 +7,8 @@ public abstract class Despawn<T> : DespawnBase where T : PoolObj
    [SerializeField] protected T parent;
    [SerializeField] protected Spawner<T> spawner;
    [SerializeField] protected bool isDespawnByTime = true;
-   [SerializeField] private float timeLife = 7f;
-   [SerializeField] private float currentTime = 7f;
+   [SerializeField] private float timeLife = 8f;
+   [SerializeField] private float currentTime = 8f;
    
    protected virtual void FixedUpdate()
    {

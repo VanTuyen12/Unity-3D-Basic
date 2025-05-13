@@ -1,5 +1,5 @@
+using System;
 using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
 
 public class EnemySpawning : EnemyManagerAbstract
@@ -14,16 +14,35 @@ public class EnemySpawning : EnemyManagerAbstract
         Invoke(nameof(this.Spawning),this.spawnSpeed);
     }
 
+    protected virtual void FixedUpdate()
+    {
+        this.RemoveDeadOne();//Ktra enemy deal chua thi xoa trong list
+    }
+
     protected virtual void Spawning()
     {
         Invoke(nameof(this.Spawning),this.spawnSpeed);
-        EnemyCtrl prefab = this.enemyManagerCtrl.EnemyPrefabs.GetRandom();
-        EnemyCtrl newEnemy = this.enemyManagerCtrl.EnemySpawner.Spawn(prefab,transform.position);
         
+        if(this.spawnedEnemies.Count >= this.maxSpawn) return;
+        EnemyCtrl prefab = this.enemyManagerCtrl.EnemyPrefabs.GetRandom();
+        
+        EnemyCtrl newEnemy = this.enemyManagerCtrl.EnemySpawner.Spawn(prefab,transform.position);
         newEnemy.gameObject.SetActive(true);
+        
+        this.spawnedEnemies.Add(newEnemy);
         
         Debug.Log("Spawning: " + prefab.name);
     }
 
-    
+    protected virtual void RemoveDeadOne()
+    {
+        foreach (EnemyCtrl enemyCtrl in this.spawnedEnemies)
+        {
+            if (enemyCtrl.EnenyDamageRecever.IsDead())
+            {
+                spawnedEnemies.Remove(enemyCtrl);
+                return;
+            }
+        }
+    }
 }

@@ -18,7 +18,13 @@ public class EnemyMoving : SaiMonoBehaviour
     [SerializeField] protected bool isFinsh = false;
     [SerializeField] protected bool isMoving = false;
     [SerializeField] protected bool canMove = false; // dang di chuyen
+
+    protected virtual void OnEnable()
+    {
+        this.OnReborn();
+    }
     
+
     protected override void Start()
     {
         this.LoadEmenyPath();
@@ -55,6 +61,12 @@ public class EnemyMoving : SaiMonoBehaviour
     protected virtual void Moving()
     {
         if (!this.canMove) 
+        {
+            this.enemyCtrl.Agent.isStopped = true;
+            return;
+        }
+        
+        if (this.enemyCtrl.EnenyDamageRecever.IsDead()) 
         {
             this.enemyCtrl.Agent.isStopped = true;
             return;
@@ -96,5 +108,10 @@ public class EnemyMoving : SaiMonoBehaviour
         if (this.enemyCtrl.Agent.velocity.magnitude>0.1f) this.isMoving = true;
         else this.isMoving = false;
         this.enemyCtrl.Animator.SetBool("isMoving", this.isMoving);
+    }
+    
+    protected virtual void OnReborn()
+    {
+        this.isFinsh = false;
     }
 }

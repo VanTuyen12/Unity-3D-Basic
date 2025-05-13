@@ -1,3 +1,4 @@
+using Unity.VisualScripting;
 using UnityEngine;
 
 [RequireComponent(typeof(CapsuleCollider))]
@@ -39,12 +40,23 @@ public class EnemyDamageRecevier : DamageRecever
     {
         base.OnDead();
         this.enemyCtrl.Animator.SetBool("isDead",this.isDead);
+        this.capsuleCollider.enabled = false;
+        Invoke(nameof(Disappear),3f);
     }
 
+    protected virtual void Disappear()
+    {
+        this.enemyCtrl.Despawn.DoDespawn();
+    }
     protected override void OnHurt()
     {
         base.OnHurt();
         this.enemyCtrl.Animator.SetTrigger("isHurt");
     }
 
+    protected override void OnReborn()
+    {
+        base.OnReborn();
+        this.capsuleCollider.enabled = true;
+    }
 }

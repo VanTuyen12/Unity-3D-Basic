@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public abstract class DamageRecever : SaiMonoBehaviour
@@ -6,6 +7,13 @@ public abstract class DamageRecever : SaiMonoBehaviour
    protected int currrentHP = 10;
    protected bool isDead = false;
    [SerializeField] protected bool isImmotal = false;
+
+   protected virtual void OnEnable()//Hàm được gọi khi Object được kích hoạt lại
+   {
+      this.OnReborn();
+   }
+   
+
    public virtual int Deduct(int hp)
    {
       
@@ -22,7 +30,7 @@ public abstract class DamageRecever : SaiMonoBehaviour
       return currrentHP;
    }
 
-   protected virtual bool IsDead()
+   public virtual bool IsDead()
    {
       return this.isDead = this.currrentHP <= 0;
    }
@@ -35,5 +43,10 @@ public abstract class DamageRecever : SaiMonoBehaviour
    protected virtual void OnHurt() 
    {
       //For Override
+   }
+   
+   protected virtual void OnReborn() 
+   {
+     this.currrentHP = this.maxHP;
    }
 }
