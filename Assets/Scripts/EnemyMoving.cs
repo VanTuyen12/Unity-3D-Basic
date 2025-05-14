@@ -113,5 +113,6 @@ public class EnemyMoving : SaiMonoBehaviour
     protected virtual void OnReborn()
     {
         this.isFinsh = false;
+        this.currentPoint = null;
     }
 }

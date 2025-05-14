@@ -30,7 +30,7 @@ public class EnemyDamageRecevier : DamageRecever
         capsuleCollider = GetComponent<CapsuleCollider>();
         capsuleCollider.isTrigger = true;
         capsuleCollider.radius = 0.3f;
-        capsuleCollider.height = 1.5f;
+        capsuleCollider.height = 2f;
         capsuleCollider.center = new Vector3(0, 1, 0);
 
         Debug.Log(transform.name + " :LoadCapsuleCollider", gameObject);

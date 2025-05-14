@@ -5,8 +5,8 @@ using UnityEngine.Serialization;
 public class TowerShooting : TowerAbstract
 {
     [SerializeField]protected EnemyCtrl target;
-    [SerializeField] private float ShootSpeed = 1f;
-    [SerializeField] private float TargetLoadSpeed = 1f;
+    [SerializeField] private float ShootSpeed = 0.2f;
+    [SerializeField] private float TargetLoadSpeed = 0.2f;
     [SerializeField] private int currentFirePoint = 0;
     [SerializeField]protected float rotationSpeed = 2f;
     protected override void Start()
