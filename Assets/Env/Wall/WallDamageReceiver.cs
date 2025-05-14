@@ -13,7 +13,7 @@ public class WallDamageReceiver : DamageRecever
     {
         if(this.boxCollider != null) return;
         this.boxCollider = this.GetComponent<BoxCollider>();
-        this.boxCollider.isTrigger = true;
+        this.boxCollider.isTrigger = false;
         
         Debug.Log(transform.name + " LoadBoxCollider", gameObject);
     }
