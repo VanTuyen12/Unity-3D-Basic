@@ -5,6 +5,7 @@ public class CrosshairPointer : MonoBehaviour
 {
     //Code Hong Tam
     protected float maxDistance = 100f;
+    protected Collider hitObj;
     [SerializeField] LayerMask layerMask= -1;
 
     protected virtual void Update()
@@ -35,7 +36,7 @@ public class CrosshairPointer : MonoBehaviour
             //hit.point: vị trí nơi tia sáng đâm vào bề mặt của vật thể đầu tiên nó gặp.
             transform.position = hit.point;//di chuyen den vi tri va cham do
             
+            this.hitObj = hit.collider;
         }
-      
     }
 }

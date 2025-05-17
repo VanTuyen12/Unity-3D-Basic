@@ -1,5 +1,4 @@
-using System.Collections;
-using System.Collections.Generic;
+
 using UnityEngine;
 
 public abstract class SaiSingleton<T> : SaiMonoBehaviour where T : SaiMonoBehaviour
@@ -33,6 +32,7 @@ public abstract class SaiSingleton<T> : SaiMonoBehaviour where T : SaiMonoBehavi
 
         if (_instance != null )
         {
+            Destroy(gameObject);
             Debug.Log("LoadInstance: _instance == null");
         }
     }
