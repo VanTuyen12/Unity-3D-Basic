@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 
 namespace Invector.vCharacterController
 {
@@ -23,6 +24,7 @@ namespace Invector.vCharacterController
 
         #endregion
 
+        [Obsolete("Obsolete")]
         protected virtual void Start()
         {
             InitilizeController();
@@ -57,6 +59,7 @@ namespace Invector.vCharacterController
                 cc.Init();
         }
 
+        [Obsolete("Obsolete")]
         protected virtual void InitializeTpCamera()
         {
             if (tpCamera == null)

@@ -31,7 +31,6 @@ public class EnemySpawning : EnemyManagerAbstract
         
         this.spawnedEnemies.Add(newEnemy);
         
-        Debug.Log("Spawning: " + prefab.name);
     }
 
     protected virtual void RemoveDeadOne()

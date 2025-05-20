@@ -3,27 +3,59 @@ using UnityEngine;
 
 public class InputManager : SaiSingleton<InputManager>
 {
-    bool isLeftClick = false;
-    bool isRightClick = false;
+    protected bool isAiming = false;
 
+    protected float attackHold = 0;
+    protected float attackLightLimit = 0.5f;
+    
+    protected bool isAttackLight = false;
+    protected bool isAttackHeavy = false;
     protected virtual void Update()
     {
-        this.CheckRightClick();
+        this.CheckAiming(); 
+        this.CheckAttacking();
     }
 
-    protected virtual void CheckRightClick()
+    protected virtual void CheckAiming()
     {
-        this.isLeftClick = Input.GetMouseButton(0);
-        this.isRightClick = Input.GetMouseButton(1);
-    }
-
-    public virtual bool IsLeftClick()
-    {
-        return this.isLeftClick;
+       
+        this.isAiming = Input.GetMouseButton(1);
     }
     
-    public virtual bool IsRightClick()
+    protected virtual void CheckAttacking()
     {
-        return this.isRightClick;
+        if(!this.isAiming) return;
+        
+        if(Input.GetMouseButton(0)) this.attackHold += Time.deltaTime;
+        
+        if (Input.GetMouseButtonUp(0))
+        {
+            this.isAttackLight = this.attackHold < this.attackLightLimit;
+            attackHold = 0;
+        }
+        else
+        {
+            this.isAttackLight = false;
+        }
+
+        if (this.attackHold > this.attackLightLimit ) this.isAttackHeavy = true;
+        else this.isAttackHeavy = false;
+        
+        
+    }
+    
+    public virtual bool IsAttackLight()
+    {
+        return this.isAttackLight;
+    }
+    
+    public virtual bool IsAttackHeavy()
+    {
+        return this.isAttackHeavy;
+    }
+    
+    public virtual bool IsAiming()
+    {
+        return this.isAiming;
     }
 }

@@ -1,16 +1,19 @@
 
+using UnityEngine;
+
 public class PlayerAiming : PlayerAbstract
 {
-      float closeLookDistance = 0.6f;
-      float farLookDistance = 1.3f;
-   protected virtual void Update()
+   [SerializeField] protected bool isAlwayAiming = false;
+    protected  float closeLookDistance = 0.6f;
+    protected  float farLookDistance = 1.3f;
+   protected virtual void FixedUpdate()
    {
       this.Aiming();
    }
 
    protected virtual void Aiming()
    {
-      if (InputManager.Instance.IsRightClick()) this.LoakClose();
+      if (this.isAlwayAiming ||InputManager.Instance.IsAiming()) this.LoakClose();
       else this.LoakFar();
    }
 
