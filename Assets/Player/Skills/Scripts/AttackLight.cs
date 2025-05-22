@@ -11,6 +11,10 @@ public class AttackLight : AttackAbstract
         AttackPoint attackPoint = this.GetAttrackPoint();
         
         EffectCtrl effect = this.spawner.Spawn(this.GetEffect(),attackPoint.transform.position);//Spawn no o vtri nao
+        
+        EffectFlyAbstract effectFly = (EffectFlyAbstract)effect;//Ep kieu
+        effectFly.FlyToTarget.SetTarget(this.playerCtrl.CrosshairPointer.transform);
+        
         effect.gameObject.SetActive(true);
         
     }

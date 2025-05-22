@@ -5,37 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ff63710c-3fd3-46b7-97c7-bae1ea8f3095" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Co Ban Unity 3D.dir/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Co Ban Unity 3D.dir/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Co Ban Unity 3D.dir/.idea/indexLayout.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Co Ban Unity 3D.dir/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Co Ban Unity 3D.dir/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Co Ban/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Co Ban/.idea/indexLayout.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Co Ban/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Co Ban/.idea/material_theme_project_new.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Co Ban/.idea/projectSettingsUpdater.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Co Ban/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Co Ban/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Unity 3D Basic/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Unity 3D Basic/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Unity-3D-Basic/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Unity-3D-Basic/.idea/indexLayout.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Unity-3D-Basic/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enemy/EnemyManager/EnemySpawning.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemy/EnemyManager/EnemySpawning.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enemy/EnemyScripts/SaiSingleton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemy/EnemyScripts/SaiSingleton.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Invector-3rdPersonController_LITE/Scripts/CharacterController/vThirdPersonInput.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Invector-3rdPersonController_LITE/Scripts/CharacterController/vThirdPersonInput.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Player/CrosshairPointer/CrosshairPointer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Player/CrosshairPointer/CrosshairPointer.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Inventory/InvCodeName.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Inventory/InvCodeName.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Inventory/Item/ItemCode.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Inventory/Item/ItemCode.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Unity 3D Basic/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Unity 3D Basic/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/DamageSystem/Bullet/Bullet.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/DamageSystem/Bullet/Bullet.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Effect/FireCtrl.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Effect/FireCtrl.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Enemy/EnemyScripts/EnemyDamageRecevier.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemy/EnemyScripts/EnemyDamageRecevier.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Player/Scripts/InputManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Player/Scripts/InputManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Player/Scripts/PlayerAiming.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Player/Scripts/PlayerAiming.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Player/Scripts/PlayerCtrl.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Player/Scripts/PlayerCtrl.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Player/vThirdPersonCamera_LITE.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Player/vThirdPersonCamera_LITE.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Player/Skills/Scripts/AttackLight.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Player/Skills/Scripts/AttackLight.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/GraphicsSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/GraphicsSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/InputManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/InputManager.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,19 +37,27 @@
   }
 }</component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/789d19bc262948a28a12b2d2c8bd2dbc34600/9d/0b842c13/Animator.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/f94944bce4a949c0b9769a50346412ae8c00/2b/ee33bc74/Input.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/DamageSystem/Bullet/PoolHolder.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Effect/EffectCtrl.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Effect/EffectDamageSender.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Effect/EffectDespawn.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Effect/EffectFlyAbstract.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Effect/EffectPrefabs.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Effect/EffectSpawner.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Effect/FireCtrl.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Effect/PoolPrefabs.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Inventory/InventoryMonies.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Inventory/Item/ItemProfileSO.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Player/Scripts/PlayerCtrl.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Player/Skills/Scripts/AttackPoint.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Player/Weapons/WeaponAbstract.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Spawner/PoolObj.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Spawner/Spawner.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/UI/Button/ButtonAbstract.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/UI/Text/TextAbstract.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/UI/Text/TextGoldCount.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../c4-main/Assets/_Data/Player/CrosshairPointer/CrosshairPointer.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../c4-main/Assets/_Data/Player/Skill/AttackPoint.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../c4-main/Assets/_Data/Player/Weapons/WandCtrl.cs" root0="SKIP_HIGHLIGHTING" />
@@ -86,22 +76,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.keymap",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor &amp; Play">
     <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\6000.0.47f1\Editor\Unity.exe" />
@@ -160,6 +150,9 @@
       <item itemvalue="Standalone Player.Unit Tests (batch mode)" />
     </list>
   </component>
+  <component name="SvnConfiguration">
+    <configuration>C:\Users\admin\AppData\Roaming\Subversion</configuration>
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="ff63710c-3fd3-46b7-97c7-bae1ea8f3095" name="Changes" comment="" />
@@ -175,6 +168,9 @@
       <workItem from="1747611141588" duration="2424000" />
       <workItem from="1747623470211" duration="9282000" />
       <workItem from="1747681379904" duration="17725000" />
+      <workItem from="1747711610731" duration="220000" />
+      <workItem from="1747763612470" duration="18419000" />
+      <workItem from="1747850361142" duration="19974000" />
     </task>
     <servers />
   </component>

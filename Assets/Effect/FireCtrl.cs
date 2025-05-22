@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class FireCtrl : EffectCtrl
+public class FireCtrl : EffectFlyAbstract
 {
     //Kiem tra loai dan
     public override string GetName()
