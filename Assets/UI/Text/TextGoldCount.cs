@@ -4,18 +4,18 @@ public class TextGoldCount : TextAbstract
 {
     protected virtual void FixedUpdate()
     {
-        this.LoadGoldCount();
+        this.LoadCount();
     }
     
-    protected virtual void LoadGoldCount()
+    protected virtual void LoadCount()
     {
-        ItemInventory item = InventoryManager.Instance.Monies().FindItem(ItemCode.Gold);
-        string goldCount;
+        ItemInventory item = InventoryManager.Instance.Monies().FindItem(ItemCode.PlayerExp);
+        string count;
 
-        if (item == null) goldCount = "0";
-        else goldCount = item.itemCount.ToString();
+        if (item == null) count = "0";
+        else count = item.itemCount.ToString();
         
-        this.textPro.text = goldCount;
+        this.textPro.text = count;
     }
     
 }
