@@ -1,5 +1,6 @@
 using Inventory;
 using Unity.VisualScripting;
+using UnityEditor;
 using UnityEngine;
 
 [RequireComponent(typeof(CapsuleCollider))]
@@ -43,7 +44,7 @@ public class EnemyDamageRecevier : DamageRecever
         this.enemyCtrl.Animator.SetBool("isDead",this.isDead);
         this.capsuleCollider.enabled = false;
         this.RewardOnDead();//Add item
-        Invoke(nameof(Disappear),3f);
+        Invoke(nameof(Disappear),5f);
     }
 
     protected virtual void Disappear()
@@ -64,9 +65,13 @@ public class EnemyDamageRecevier : DamageRecever
     
     protected virtual void RewardOnDead()
     {
-        ItemInventory item = new();
-        item.itemProfile = InventoryManager.Instance.GetProfileByCode(ItemCode.Gold);
+        ItemsDropManager.Instance.DropMany(ItemCode.Gold,10,transform.position);//rot Gold va so gold o vi tri quai die
+        ItemsDropManager.Instance.DropMany(ItemCode.Wand,5,transform.position);
+        
+
+        /*ItemInventory item = new();
+        item.itemProfile = InventoryManager.Instance.GetProfileByCode(ItemCode.Gold);//+ Count khi quai die
         item.itemCount = 1;
-        InventoryManager.Instance.Monies().AddItem(item);
+        InventoryManager.Instance.Monies().AddItem(item);*/
     }
 }

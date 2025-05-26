@@ -4,23 +4,40 @@ using UnityEngine;
 //where T : PoolObj có nghĩa là kiểu dữ liệu T phải là lớp PoolObj hoặc là một lớp kế thừa từ PoolObj.
 public abstract class Spawner<T> : SaiMonoBehaviour where T : PoolObj 
 {
-    [SerializeField] protected int spawnCount = 0;
-    [SerializeField] protected PoolHolder poolHolder;
-    [SerializeField] protected List<T> inPoolObjs;
     //Object Pooling
+    [SerializeField] protected int spawnCount = 0;
+    [SerializeField] protected Transform poolHolder;
+    
+    [SerializeField] protected List<T> inPoolObjs = new() ;
+    
+    [SerializeField] protected PoolPrefabs<T> poolPrefabs;
+    public PoolPrefabs<T> PoolPrefabs => poolPrefabs;
 
     protected override void LoadComponents()
     {
         base.LoadComponents();
         this.LoadPoolHolder();
+        this.LoadPoolPrefabs();
     }
 
     protected virtual void LoadPoolHolder()
     {
         if (poolHolder != null) return;
-        this.poolHolder = transform.GetComponentInChildren<PoolHolder>();
-        
+        this.poolHolder = transform.Find("PoolHolder");
+
+        if (poolHolder == null)
+        {
+            this.poolHolder = new GameObject("PoolHolder").transform;
+            this.poolHolder.parent = transform;
+        }
         Debug.Log(transform.name + " :LoadPoolHolder",gameObject);
+    }
+    
+    protected virtual void LoadPoolPrefabs()
+    {
+        if (this.poolPrefabs != null) return;
+        this.poolPrefabs = GetComponentInChildren<PoolPrefabs<T>>();
+        Debug.Log(transform.name + ": LoadPoolPrefabs", gameObject);
     }
     
     public virtual void Despawn(Transform obj)
@@ -28,7 +45,7 @@ public abstract class Spawner<T> : SaiMonoBehaviour where T : PoolObj
         Destroy(obj.gameObject);
     }
 
-    public virtual T Spawn(T prefab) //Vien dan
+    public virtual T Spawn(T prefab) //Spawn GameObj
     {
 
         T newObject = this.GetObjFromPool(prefab);
@@ -39,17 +56,15 @@ public abstract class Spawner<T> : SaiMonoBehaviour where T : PoolObj
             this.UpdateName(prefab.transform, newObject.transform);
         }
 
-        if (this.poolHolder != null)
-        {
-            newObject.transform.parent = this.poolHolder.transform;
-        }
+        if (this.poolHolder != null) newObject.transform.parent = this.poolHolder.transform;
+        
         
         return newObject;
     }
 
-    public virtual T Spawn(T bulletPrefab, Vector3 position) //xuan hien o vitri nao(point_0,point_1)
+    public virtual T Spawn(T prefab, Vector3 position) //xuan hien o vitri nao(point_0,point_1)
     {
-        T newBullet = this.Spawn(bulletPrefab);
+        T newBullet = this.Spawn(prefab);
         newBullet.transform.position = position;
         return newBullet;
     }

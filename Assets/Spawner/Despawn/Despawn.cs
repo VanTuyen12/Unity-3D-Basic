@@ -42,6 +42,7 @@ public abstract class Despawn<T> : DespawnBase where T : PoolObj
    {
       this.spawner.Despawn(this.parent);//Spawn vien dan
    }
+   
    protected virtual void LoadParent()
    {
       if (this.parent != null) return;

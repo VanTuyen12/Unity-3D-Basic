@@ -5,19 +5,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ff63710c-3fd3-46b7-97c7-bae1ea8f3095" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Inventory/InvCodeName.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Inventory/InvCodeName.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Inventory/Item/ItemCode.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Inventory/Item/ItemCode.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Inventory/InventoryTester.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Inventory/InventoryTester.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Unity 3D Basic/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Unity 3D Basic/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/DamageSystem/Bullet/Bullet.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/DamageSystem/Bullet/Bullet.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Effect/FireCtrl.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Effect/FireCtrl.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Enemy/EnemyScripts/EnemyDamageRecevier.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemy/EnemyScripts/EnemyDamageRecevier.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Player/Scripts/InputManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Player/Scripts/InputManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Player/Skills/Scripts/AttackLight.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Player/Skills/Scripts/AttackLight.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Inventory/InvCodeName.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Inventory/InvCodeName.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Inventory/InventoryCtrl.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Inventory/InventoryCtrl.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Inventory/InventoryManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Inventory/InventoryManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Inventory/Item/Gold.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Inventory/Item/Gold.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Inventory/Item/ItemCode.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Inventory/Item/ItemCode.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Inventory/Item/ItemInventory.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Inventory/Item/ItemInventory.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Inventory/Item/ItemProfileSO.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Inventory/Item/ItemProfileSO.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Inventory/Item/Wand.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Inventory/Item/Wand.asset.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Spawner/Despawn/Despawn.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Spawner/Despawn/Despawn.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Spawner/Spawner.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Spawner/Spawner.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tower/_Scripts/TowerShooting.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Tower/_Scripts/TowerShooting.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UI/Inventory/InventoryUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UI/Inventory/InventoryUI.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,8 +46,14 @@
   }
 }</component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/1e74f08236fb4c1791a523c0bf197e6c1df600/7a/7d9da914/Transform.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/1e74f08236fb4c1791a523c0bf197e6c1df600/d3/7caf8465/MonoBehaviour.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/1e74f08236fb4c1791a523c0bf197e6c1df600/e1/ee7b28ff/Object.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/789d19bc262948a28a12b2d2c8bd2dbc34600/9d/0b842c13/Animator.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/d0fe708da5c14cd88655562e1adc75011b60b8/c3/00a4bfbc/Transform.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/f94944bce4a949c0b9769a50346412ae8c00/2b/ee33bc74/Input.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/3ea01e77be99618395f448b16bd7cc2bd4248bd9e5d8474964b2d97f39c5d74/System.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/d44b17e136d09081da1e8fd0e8c83fde60e11818b9f2442d7ed8cb733fae895e/System.Collections.Generic.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/DamageSystem/Bullet/PoolHolder.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Effect/EffectCtrl.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Effect/EffectDamageSender.cs" root0="FORCE_HIGHLIGHTING" />
@@ -48,14 +63,18 @@
     <setting file="file://$PROJECT_DIR$/Assets/Effect/EffectSpawner.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Effect/FireCtrl.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Effect/PoolPrefabs.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Input_Script/InputHotkey.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Inventory/InventoryMonies.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Inventory/Item/ItemProfileSO.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Inventory/ItemDrop/ItemDropCtrl.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Inventory/ItemDrop/ItemDropDespawn.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Inventory/ItemDrop/ItemPicker.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Player/Scripts/PlayerCtrl.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Player/Skills/Scripts/AttackPoint.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Player/Weapons/WeaponAbstract.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Spawner/PoolObj.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Spawner/Spawner.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/UI/Button/ButtonAbstract.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/UI/Inventory/InventoryUI.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/UI/Text/TextAbstract.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/UI/Text/TextGoldCount.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../c4-main/Assets/_Data/Player/CrosshairPointer/CrosshairPointer.cs" root0="SKIP_HIGHLIGHTING" />
@@ -76,22 +95,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.keymap",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.build.unityPlugin&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
+  <component name="RiderProblemsViewState">
+    <option name="sortByName" value="true" />
+  </component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor &amp; Play">
     <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\6000.0.47f1\Editor\Unity.exe" />
@@ -171,6 +193,15 @@
       <workItem from="1747711610731" duration="220000" />
       <workItem from="1747763612470" duration="18419000" />
       <workItem from="1747850361142" duration="19974000" />
+      <workItem from="1747884246489" duration="211000" />
+      <workItem from="1747935492061" duration="7948000" />
+      <workItem from="1747963627055" duration="6539000" />
+      <workItem from="1748020009720" duration="1312000" />
+      <workItem from="1748024423959" duration="15142000" />
+      <workItem from="1748138782429" duration="8242000" />
+      <workItem from="1748200420315" duration="120000" />
+      <workItem from="1748200768240" duration="1247000" />
+      <workItem from="1748223851903" duration="9600000" />
     </task>
     <servers />
   </component>
@@ -216,5 +247,9 @@
         </breakpoint>
       </breakpoints>
     </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
