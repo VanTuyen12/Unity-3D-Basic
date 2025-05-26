@@ -18,7 +18,7 @@ public class InventoryTester : SaiMonoBehaviour
     [ProButton]
     public virtual void AddTestGold(int count)
     {
-            InventoryCtrl inventoryCtrl = InventoryManager.Instance.GetByCodeName(InvCodeName.Monies); //Chon vi tri kho do
+            InventoryCtrl inventoryCtrl = InventoryManager.Instance.GetByCodeName(InvCodeName.Currency); //Chon vi tri kho do
             ItemInventory gold = new(); //tao mon do
             gold.itemProfile = InventoryManager.Instance.GetProfileByCode(ItemCode.Gold);
             gold.itemName = gold.itemProfile.itemName;
@@ -31,7 +31,7 @@ public class InventoryTester : SaiMonoBehaviour
     [ProButton]
     public virtual void RemoveTestGold( int count)
     {
-        InventoryCtrl inventoryCtrl = InventoryManager.Instance.GetByCodeName(InvCodeName.Monies); //Chon vi tri kho do
+        InventoryCtrl inventoryCtrl = InventoryManager.Instance.GetByCodeName(InvCodeName.Currency); //Chon vi tri kho do
         
             ItemInventory Gold = new(); //tao mon do
             Gold.itemProfile = InventoryManager.Instance.GetProfileByCode(ItemCode.Gold);

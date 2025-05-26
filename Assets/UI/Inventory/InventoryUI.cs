@@ -5,8 +5,8 @@ using UnityEngine.Serialization;
 
 public class InventoryUI : SaiSingleton<InventoryUI>
 {
-    protected bool isShow = true;
-    bool IsShow => isShow;
+    public bool isShow = true;
+    public bool IsShow => isShow;
 
     [SerializeField] protected Transform showHide;
     
@@ -25,7 +25,8 @@ public class InventoryUI : SaiSingleton<InventoryUI>
     protected override void Start()
     {
         base.Start();
-        this.Show();
+        //this.Show();
+        this.Hide();
         this.HideDefaultItemInventory();
     }
 

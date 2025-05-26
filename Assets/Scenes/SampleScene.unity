@@ -7022,6 +7022,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61a32cb7af3ad4843b3ef00c945eefad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isShow: 1
   showHide: {fileID: 1594425231}
   defaultItemInventoryUI: {fileID: 1006108785}
 --- !u!1 &1654845980
@@ -7409,6 +7410,7 @@ MonoBehaviour:
   - {fileID: 28118445}
   itemProfiles:
   - {fileID: 11400000, guid: 14b6b1f57a150774b8c28b542cb72685, type: 2}
+  - {fileID: 11400000, guid: 9ea72d75ca835384e9b14182e2f9a68f, type: 2}
   - {fileID: 11400000, guid: dc2e4c2da0228d14f847573744894c1b, type: 2}
   - {fileID: 11400000, guid: 3ba290c79ba494a47a5dc8cbfb045c01, type: 2}
 --- !u!1 &1766783973

@@ -6,4 +6,5 @@
         Gold = 1,
         Wand = 100,//gay phep
         PotionMana = 200,
+        PlayerExp = 300,
     }

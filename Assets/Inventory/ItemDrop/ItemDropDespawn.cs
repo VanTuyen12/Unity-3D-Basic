@@ -4,7 +4,7 @@ public class ItemDropDespawn : Despawn<ItemDropCtrl>
 {
    public override void DoDespawn()
    {
-       ItemDropCtrl itemDropCtrl = (ItemDropCtrl)this.parent;
+        ItemDropCtrl itemDropCtrl = (ItemDropCtrl)this.parent;
        
         ItemInventory item = new();
         item.itemProfile = InventoryManager.Instance.GetProfileByCode(itemDropCtrl.ItemCode);//+ Count khi quai die

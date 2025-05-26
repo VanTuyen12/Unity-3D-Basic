@@ -38,7 +38,7 @@ public class ItemsDropManager : SaiSingleton<ItemsDropManager>
         if (itemPrefabs == null) itemPrefabs = this.spawner.PoolPrefabs.GetByName("DefaultDrop");
         
         ItemDropCtrl newItem = this.spawner.Spawn(itemPrefabs, spawnPosition);
-        newItem.SetValue(itemCode, dropCount, InvCodeName.Monies);//gold vao monies
+        newItem.SetValue(itemCode, dropCount, InvCodeName.Currency);//gold vao monies
         
         newItem.gameObject.SetActive(true);
         
