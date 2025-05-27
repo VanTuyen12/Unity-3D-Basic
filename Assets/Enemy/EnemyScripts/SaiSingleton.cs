@@ -9,8 +9,7 @@ public abstract class SaiSingleton<T> : SaiMonoBehaviour where T : SaiMonoBehavi
     {
         get
         {
-            if (_instance == null) 
-                Debug.Log("SaiSingleton<T>: _instance == null");
+            if (_instance == null) Debug.LogError("Singleton instance has not been created yet!");
             return _instance;
         }
     }
@@ -26,14 +25,10 @@ public abstract class SaiSingleton<T> : SaiMonoBehaviour where T : SaiMonoBehavi
         if (_instance == null)
         {
             _instance = this as T;
-            DontDestroyOnLoad(gameObject);//Giu nguyen object nay cho scene k bi xoa
+            if(transform.parent == null) DontDestroyOnLoad(gameObject);//Giu nguyen object nay cho scene k bi xoa
             return;
         }
 
-        if (_instance != null )
-        {
-           
-            Debug.Log("LoadInstance: _instance == null");
-        }
+        if (_instance != this) Debug.LogError("Another instance of SingletonExample already exists!");
     }
 }

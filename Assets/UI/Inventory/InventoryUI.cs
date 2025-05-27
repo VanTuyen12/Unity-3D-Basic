@@ -80,7 +80,7 @@ public class InventoryUI : SaiSingleton<InventoryUI>
     // ReSharper disable Unity.PerformanceAnalysis
     protected virtual void ItemsUpdating()
     {
-        if(this.isShow == false) return;
+        if(!this.isShow == false) return;
         
         InventoryCtrl itemInvCtr = InventoryManager.Instance.Items();
 
@@ -95,7 +95,7 @@ public class InventoryUI : SaiSingleton<InventoryUI>
                 newBtnItem.SetItem(itemInventory);
                 newBtnItem.transform.localScale = new Vector3(1, 1, 1);
                 newBtnItem.gameObject.SetActive(true);
-                newBtnItem.name = itemInventory.itemName + " - " + itemInventory.ItemId;
+                newBtnItem.name = itemInventory.GetItemName()+ " - " + itemInventory.ItemID;
                 this.btnItems.Add(newBtnItem);
             }
         }
@@ -105,7 +105,7 @@ public class InventoryUI : SaiSingleton<InventoryUI>
     {
         foreach (BtnItemInventory itemInvUI in this.btnItems)
         {
-            if (itemInvUI.ItemInventory.ItemId == itemInventory.ItemId) return itemInvUI;
+            if (itemInvUI.ItemInventory.ItemID == itemInventory.ItemID) return itemInvUI;
             
         }
 

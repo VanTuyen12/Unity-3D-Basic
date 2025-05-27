@@ -5,28 +5,34 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ff63710c-3fd3-46b7-97c7-bae1ea8f3095" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Inventory/InventoryTester.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Inventory/InventoryTester.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Inventory/Item/Resources/ItemCodeParse.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Inventory/Item/Resources/ItemCodeParse.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Unity 3D Basic/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Unity 3D Basic/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Effect/PoolPrefabs.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Effect/PoolPrefabs.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Enemy/EnemyScripts/EnemyDamageRecevier.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemy/EnemyScripts/EnemyDamageRecevier.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Inventory/InvCodeName.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Inventory/InvCodeName.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Enemy/EnemyScripts/SaiSingleton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemy/EnemyScripts/SaiSingleton.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Inventory/InventoryCtrl.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Inventory/InventoryCtrl.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Inventory/InventoryManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Inventory/InventoryManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Inventory/Item/Gold.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Inventory/Item/Gold.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Inventory/Item/ItemCode.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Inventory/Item/ItemCode.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Inventory/Item/ItemInventory.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Inventory/Item/ItemInventory.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Inventory/Item/ItemProfileSO.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Inventory/Item/ItemProfileSO.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Inventory/Item/Wand.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Inventory/Item/Wand.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Inventory/InventoryTester.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Inventory/InventoryTester.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Inventory/Item/Resources/ItemCode.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Inventory/Item/Resources/ItemCode.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Inventory/Item/Resources/ItemInventory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Inventory/Item/Resources/ItemInventory.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Inventory/Item/Resources/ItemProfile/PlayerExp.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Inventory/Item/Resources/ItemProfile/PlayerExp.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Inventory/Item/Resources/ItemProfile/PotionMana.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Inventory/Item/Resources/ItemProfile/PotionMana.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Inventory/Item/Resources/ItemProfileSO.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Inventory/Item/Resources/ItemProfileSO.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Inventory/ItemDrop/ItemDropCtrl.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Inventory/ItemDrop/ItemDropCtrl.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Inventory/ItemDrop/ItemDropDespawn.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Inventory/ItemDrop/ItemDropDespawn.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Inventory/ItemDrop/ItemPicker.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Inventory/ItemDrop/ItemPicker.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Inventory/ItemDrop/ItemsDropManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Inventory/ItemDrop/ItemsDropManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Spawner/Despawn/Despawn.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Spawner/Despawn/Despawn.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Spawner/Spawner.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Spawner/Spawner.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tower/_Scripts/TowerCtrl.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Tower/_Scripts/TowerCtrl.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Tower/_Scripts/TowerShooting.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Tower/_Scripts/TowerShooting.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UI/Inventory/BtnItemInventory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UI/Inventory/BtnItemInventory.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/UI/Inventory/InventoryUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UI/Inventory/InventoryUI.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UI/Text/TextGoldCount.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UI/Text/TextGoldCount.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,6 +74,8 @@
     <setting file="file://$PROJECT_DIR$/Assets/Inventory/ItemDrop/ItemDropCtrl.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Inventory/ItemDrop/ItemDropDespawn.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Inventory/ItemDrop/ItemPicker.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Level/EnemyLevel.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Level/TowerLevel.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Player/Scripts/PlayerCtrl.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Player/Skills/Scripts/AttackPoint.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Player/Weapons/WeaponAbstract.cs" root0="FORCE_HIGHLIGHTING" />
@@ -77,6 +85,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/UI/Inventory/InventoryUI.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/UI/Text/TextAbstract.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/UI/Text/TextGoldCount.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/UI/Text/TextPlayerExpCount.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../c4-main/Assets/_Data/Player/CrosshairPointer/CrosshairPointer.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../c4-main/Assets/_Data/Player/Skill/AttackPoint.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../c4-main/Assets/_Data/Player/Weapons/WandCtrl.cs" root0="SKIP_HIGHLIGHTING" />
@@ -202,6 +211,7 @@
       <workItem from="1748200420315" duration="120000" />
       <workItem from="1748200768240" duration="1247000" />
       <workItem from="1748223851903" duration="9600000" />
+      <workItem from="1748370747678" duration="9176000" />
     </task>
     <servers />
   </component>

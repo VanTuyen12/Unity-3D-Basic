@@ -40,11 +40,6 @@ public abstract class Spawner<T> : SaiMonoBehaviour where T : PoolObj
         Debug.Log(transform.name + ": LoadPoolPrefabs", gameObject);
     }
     
-    public virtual void Despawn(Transform obj)
-    {
-        Destroy(obj.gameObject);
-    }
-
     public virtual T Spawn(T prefab) //Spawn GameObj
     {
 
@@ -68,7 +63,12 @@ public abstract class Spawner<T> : SaiMonoBehaviour where T : PoolObj
         newBullet.transform.position = position;
         return newBullet;
     }
-
+    
+    public virtual void Despawn(Transform obj)
+    {
+        Destroy(obj.gameObject);
+    }
+    
     public virtual void Despawn(T obj)
     {
         if (obj is MonoBehaviour monoBehaviour)

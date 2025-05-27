@@ -22,40 +22,33 @@ public abstract class Despawn<T> : DespawnBase where T : PoolObj
       this.LoadSpawner();
    }
 
-   public virtual void SetSpawner(Spawner<T> spawner)
+   protected virtual void LoadParent()
    {
-      this.spawner = spawner;
+      if (this.parent != null) return;
+      this.parent = transform.parent.GetComponent<T>();
+      Debug.Log(transform.name + ": LoadParent", gameObject);
    }
-   
+
+   protected virtual void LoadSpawner()
+   {
+      if (this.spawner != null) return;
+      this.spawner = GameObject.FindAnyObjectByType<Spawner<T>>();
+      Debug.Log(transform.name + ": LoadSpawner", gameObject);
+   }
+
    protected virtual void DespawnByTime()
    {
       if (!this.isDespawnByTime) return;
-      
-      currentTime -= Time.fixedDeltaTime;
-      if (currentTime > 0 ) return;
-      
+
+      this.currentTime -= Time.fixedDeltaTime;
+      if (this.currentTime > 0) return;
+
       this.DoDespawn();
       this.currentTime = this.timeLife;
    }
 
    public override void DoDespawn()
    {
-      this.spawner.Despawn(this.parent);//Spawn vien dan
-   }
-   
-   protected virtual void LoadParent()
-   {
-      if (this.parent != null) return;
-      this.parent = transform.parent.GetComponent<T>();
-
-      Debug.Log(transform.name + ":LoadParent", gameObject);
-   }
-   
-   protected virtual void LoadSpawner()
-   {
-      if (this.spawner != null) return;
-      this.spawner = GameObject.FindAnyObjectByType<Spawner<T>>();
-
-      Debug.Log(transform.name + ":LoadSpawner", gameObject);
+      this.spawner.Despawn(this.parent);
    }
 }

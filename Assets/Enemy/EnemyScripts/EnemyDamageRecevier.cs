@@ -66,7 +66,8 @@ public class EnemyDamageRecevier : DamageRecever
     protected virtual void RewardOnDead()
     {
         ItemsDropManager.Instance.DropMany(ItemCode.Gold,10,transform.position);//rot Gold va so gold o vi tri quai die
-        ItemsDropManager.Instance.DropMany(ItemCode.Wand,5,transform.position);
+        ItemsDropManager.Instance.DropMany(ItemCode.PotionMana,5,transform.position);
+        ItemsDropManager.Instance.DropMany(ItemCode.PlayerExp,10,transform.position);
         
 
         /*ItemInventory item = new();

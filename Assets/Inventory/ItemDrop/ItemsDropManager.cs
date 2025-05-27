@@ -1,4 +1,4 @@
-using Inventory;
+using Inventory; 
 using UnityEngine;
 
 public class ItemsDropManager : SaiSingleton<ItemsDropManager>
@@ -18,7 +18,7 @@ public class ItemsDropManager : SaiSingleton<ItemsDropManager>
 
     protected virtual void LoadSpawner()
     {
-        if (spawner != null) return;
+        if (this.spawner != null) return;
         this.spawner = GetComponent<ItemsDropSpawner>();
         
         Debug.Log(transform.name + " :LoadSpawner ",gameObject);
@@ -38,12 +38,12 @@ public class ItemsDropManager : SaiSingleton<ItemsDropManager>
         if (itemPrefabs == null) itemPrefabs = this.spawner.PoolPrefabs.GetByName("DefaultDrop");
         
         ItemDropCtrl newItem = this.spawner.Spawn(itemPrefabs, spawnPosition);
-        newItem.SetValue(itemCode, dropCount, InvCodeName.Currency);//gold vao monies
+        newItem.SetValue(itemCode, dropCount);//gold vao monies
         
         newItem.gameObject.SetActive(true);
         
         Vector3 ramdomDirection  = Random.onUnitSphere;
         ramdomDirection.y = Mathf.Abs(ramdomDirection.y);
-        newItem.Rigi.AddForce(ramdomDirection * forceAmount, ForceMode.Impulse);
+        newItem.Rigidbody.AddForce(ramdomDirection * forceAmount, ForceMode.Impulse);
     }
 }

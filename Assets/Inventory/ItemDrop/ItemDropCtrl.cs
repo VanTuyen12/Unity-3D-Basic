@@ -1,14 +1,12 @@
 using Inventory;
 using UnityEngine;
+using UnityEngine.Serialization;
 
-    [RequireComponent(typeof(Rigidbody))]
+[RequireComponent(typeof(Rigidbody))]
 public class ItemDropCtrl : PoolObj
 {
     [SerializeField]protected Rigidbody _rigi;
-    public Rigidbody Rigi => _rigi;
-    
-    protected InvCodeName invCodeName = InvCodeName.Items;
-    public InvCodeName  InvCodeName => invCodeName;
+    public Rigidbody Rigidbody => _rigi;
     
     [SerializeField]protected ItemCode itemCode;
     public ItemCode ItemCode => itemCode;
@@ -26,12 +24,6 @@ public class ItemDropCtrl : PoolObj
         this.itemCount = itemCount;
     }
     
-    public virtual void SetValue(ItemCode itemCode, int itemCount,InvCodeName invCodeName)
-    {
-        this.itemCode = itemCode;
-        this.itemCount = itemCount;
-        this.invCodeName = invCodeName;
-    }
     
     protected override void LoadComponents()
     {

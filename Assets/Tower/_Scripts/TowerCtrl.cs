@@ -16,9 +16,13 @@ public class TowerCtrl : SaiMonoBehaviour
     
     [SerializeField] protected Bullet bullet;
     public Bullet Bullet => bullet;
+    [SerializeField] protected TowerShooting towerShooting;
+    public TowerShooting TowerShooting => towerShooting;
     
     [SerializeField] protected List<FirePoint> firePoints;
     public List<FirePoint> FirePoints => firePoints;
+    
+    
 
     protected override void Awake()
     {
@@ -34,14 +38,21 @@ public class TowerCtrl : SaiMonoBehaviour
         this.LoadBulletSpanwer();
         this.LoadBullet();
         this.LoadFirePoints();
+        this.LoadTowerShootings();
     }
 
+    protected virtual void LoadTowerShootings()
+    {
+        if (this.towerShooting != null) return;
+        this.towerShooting = GetComponentInChildren<TowerShooting>();
+        Debug.Log(transform.name + " LoadTowerShootings(): ", gameObject);
+    }
     protected virtual void LoadBullet()
     {
        if(this.bullet != null) return;
        bullet = transform.GetComponentInChildren<Bullet>();
        
-       //Debug.Log(transform.name + ":LoadBullet ", gameObject);
+       Debug.Log(transform.name + ":LoadBullet ", gameObject);
     }
 
     protected virtual void LoadBulletSpanwer()
@@ -49,21 +60,21 @@ public class TowerCtrl : SaiMonoBehaviour
         if(bulletSpanwer != null) return;
         this.bulletSpanwer = FindAnyObjectByType<BulletSpanwer>();
         
-        //Debug.Log(transform.name + " :LoadBulletSpanwer ", gameObject);
+        Debug.Log(transform.name + " :LoadBulletSpanwer ", gameObject);
     }
     protected virtual void LoadModel()
     {
         if (this.model != null) return;
         this.model = transform.Find("Model");
         this.rotator = model.Find("Rotator");
-        //Debug.Log(transform.name + " LoadModel(): ", gameObject);
+        Debug.Log(transform.name + " LoadModel(): ", gameObject);
     }
     
     protected virtual void LoadTowerTargeting()
     {
         if (this.towerTargeting != null) return;
         this.towerTargeting = transform.GetComponentInChildren<TowerTargeting>();
-        //Debug.Log(transform.name + " LoadTowerTargeting(): ", gameObject);
+        Debug.Log(transform.name + " LoadTowerTargeting(): ", gameObject);
     }
     
     protected virtual void LoadFirePoints()
@@ -71,7 +82,7 @@ public class TowerCtrl : SaiMonoBehaviour
         if (this.firePoints.Count > 0) return;
         FirePoint[] points = transform.GetComponentsInChildren<FirePoint>(); // Tra ve mang ds cua FirePoint
         this.firePoints = new List<FirePoint>(points);//them ds FirePoint trong mang tra ve vao List
-        //Debug.Log(transform.name + " LoadFirePoints(): ", gameObject);
+        Debug.Log(transform.name + " LoadFirePoints(): ", gameObject);
     }
     
     protected virtual void HidePrefabs()

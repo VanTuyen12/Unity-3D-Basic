@@ -1,6 +1,6 @@
 
 
-public class TextGoldCount : TextAbstract
+public class TextPlayerExpCount : TextAbstract
 {
     protected virtual void FixedUpdate()
     {
@@ -9,7 +9,7 @@ public class TextGoldCount : TextAbstract
     
     protected virtual void LoadCount()
     {
-        ItemInventory item = InventoryManager.Instance.Monies().FindItem(ItemCode.Gold);
+        ItemInventory item = InventoryManager.Instance.Monies().FindItem(ItemCode.PlayerExp);
         string count;
 
         if (item == null) count = "0";

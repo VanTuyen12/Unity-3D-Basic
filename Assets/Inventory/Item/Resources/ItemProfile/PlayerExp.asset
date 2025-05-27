@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: PlayerExp
   m_EditorClassIdentifier: 
   invCodeName: 1
-  itemCode: 300
+  itemCode: 2
   itemName: PlayerExp
   isStackable: 1

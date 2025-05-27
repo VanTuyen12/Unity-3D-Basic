@@ -18,7 +18,7 @@ using UnityEngine;
          ItemInventory itemExist = FindItem(item.itemProfile.itemCode);//Lay vat pham do ra
          if (!item.itemProfile.isStackable || itemExist == null)
          {
-            item.ItemId = Random.Range(0, 9999999);
+            item.SetId( Random.Range(0, 9999999));
             items.Add(item);
             return;
          }

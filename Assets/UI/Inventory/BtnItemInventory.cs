@@ -52,7 +52,7 @@ public class BtnItemInventory : ButtonAbstract
         {
             Destroy(gameObject);
         }
-        this.txtItemName.text = itemInventory.itemName;
+        this.txtItemName.text = itemInventory.GetItemName();
         this.txtItemCount.text = itemInventory.itemCount.ToString();
     }
 }

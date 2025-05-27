@@ -12,6 +12,7 @@ public abstract class PoolPrefabs<T> : SaiMonoBehaviour where T : PoolObj
    {
         base.LoadComponents();
         this.LoadPrefabs();
+        this.HidePrefabs();
    }
 
    protected virtual void LoadPrefabs()
