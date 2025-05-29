@@ -5,6 +5,7 @@ using UnityEngine.Serialization;
 public class TowerShooting : TowerAbstract
 {
     [SerializeField]protected EnemyCtrl target;
+    
     [SerializeField] protected float ShootSpeed = 0.2f;
     [SerializeField] protected float TargetLoadSpeed = 0.2f;
     [SerializeField] protected int currentFirePoint = 0;
@@ -14,6 +15,7 @@ public class TowerShooting : TowerAbstract
     [SerializeField]protected int totalKill = 0;
     public int TotalKill => totalKill;
     
+    [SerializeField]protected EffectSpawner effectSpawner;
     protected override void Start()
     {
         base.Start();
@@ -56,8 +58,8 @@ public class TowerShooting : TowerAbstract
         
         //this.towerCtrl.Rotator.LookAt(this.target.TowerTagertable.transform.position);//Nhìn về vtr 1 gameObject
     }
-    
-    protected virtual void Shooting()//Ktra enemy co trong pham vi cau shootgun hay k
+    //code cu
+    /*protected virtual void Shooting()//Ktra enemy co trong pham vi cau shootgun hay k
     { 
         Invoke(nameof(this.Shooting),this.ShootSpeed);
         if(this.target == null) return;
@@ -69,9 +71,21 @@ public class TowerShooting : TowerAbstract
         newBullet.transform.forward = rotatorDirection;//gán hướng vtri vien dan bay theo huong quay của Rotator
         
         newBullet.gameObject.SetActive(true);
-    }
+    }*/
 
-    protected virtual FirePoint GetFirePoint()
+    protected virtual void Shooting()
+    {
+        Invoke(nameof(this.Shooting),ShootSpeed + Random.Range(-0.1f,0.1f));  
+        if(target == null) return;
+        
+        FirePoint firePoint = GetFirePoint();//Lay vitri point
+        Vector3 rotatorDirection = towerCtrl.Rotator.transform.forward;//lay Huong Rotator xoay cua trc z
+
+        this.SpawnBullet(firePoint.transform.position, rotatorDirection);//Spawn vien dan theo huong
+        this.SpawnMuzzle(firePoint.transform.position, rotatorDirection);//Spawn vien dan theo huong
+    }
+    
+    protected virtual FirePoint GetFirePoint()//Lay vtri point
     {
        FirePoint firePoint = this.towerCtrl.FirePoints[this.currentFirePoint];
        
@@ -79,6 +93,21 @@ public class TowerShooting : TowerAbstract
        if (this.currentFirePoint == this.towerCtrl.FirePoints.Count) this.currentFirePoint = 0;
        
        return firePoint;
+    }
+    protected virtual void SpawnBullet(Vector3 spawnPoint, Vector3 rotatorDirection)
+    {
+        Bullet newBullet = this.towerCtrl.BulletSpanwer.Spawn(this.towerCtrl.Bullet,spawnPoint);//Spawn đạn theo vị trí của Point
+        newBullet.transform.forward = rotatorDirection;//gán hướng vtri vien dan bay theo huong quay của Rotator
+        newBullet.gameObject.SetActive(true);
+    }
+    
+    protected virtual void SpawnMuzzle(Vector3 spawnPoint, Vector3 rotatorDirection)
+    {
+        
+        EffectCtrl effect = EffectSpawnerCtrl.Instance.Spawner.PoolPrefabs.GetByName("Muzzle1");//Lay doi tuong can spawn
+        EffectCtrl newEffect = EffectSpawnerCtrl.Instance.Spawner.Spawn(effect, spawnPoint);//spawn
+        newEffect.transform.forward = rotatorDirection;//quay doi tuong theo truc R
+        newEffect.gameObject.SetActive(true);
     }
     
     protected virtual bool IsTargetDead()

@@ -1,44 +1,20 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemyPrefabs : EnemyManagerAbstract
+public class EnemyPrefabs : PoolPrefabs<EnemyCtrl>
 {
-    [SerializeField]protected List<EnemyCtrl> prefabs = new();
+    [SerializeField] protected EnemyManagerCtrl enemyManagerCtrl;
 
-    protected override void Awake()
-    {
-        base.Awake();
-        this.HidePrefabs();
-    }
-    
     protected override void LoadComponents()
     {
         base.LoadComponents();
-        this.LoadEnemyPrefabs();
+        this.LoadEnemyManagerCtrl();
     }
 
-    protected virtual void HidePrefabs()// ẩn quái
+    protected virtual void LoadEnemyManagerCtrl()
     {
-        foreach (EnemyCtrl enemyCtrl in this.prefabs)
-        {
-            enemyCtrl.gameObject.SetActive(false);
-        }
-    }
-    
-    protected virtual void LoadEnemyPrefabs()
-    {
-        if (this.prefabs.Count > 0) return;
-        foreach (Transform child in transform)
-        {
-            EnemyCtrl enemyCtrl = child.GetComponent<EnemyCtrl>();
-            if (enemyCtrl) this.prefabs.Add(enemyCtrl);
-        }
-        Debug.Log(transform.name + " LoadEnemyPrefabs ",gameObject);
-    }
-
-    public virtual EnemyCtrl GetRandom()
-    {
-        int rand = Random.Range(0, this.prefabs.Count);
-        return this.prefabs[rand];
+        if (this.enemyManagerCtrl != null) return;
+        this.enemyManagerCtrl = transform.GetComponentInParent<EnemyManagerCtrl>();
+        Debug.Log(transform.name + ": LoadEnemyManagerCtrl", gameObject);
     }
 }

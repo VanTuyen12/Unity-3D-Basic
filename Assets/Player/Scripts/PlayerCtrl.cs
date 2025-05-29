@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.Animations.Rigging;
 using UnityEngine.Serialization;
 
-public class PlayerCtrl : SaiMonoBehaviour
+public class PlayerCtrl : SaiSingleton<PlayerCtrl>
 {
   [SerializeField] vThirdPersonController thirdPersonCtrl;
   public vThirdPersonController ThirdPersonCtrl => thirdPersonCtrl;
@@ -23,6 +23,9 @@ public class PlayerCtrl : SaiMonoBehaviour
   
   [SerializeField] protected Weapons weapons;
   public Weapons Weapons => weapons;
+
+  [SerializeField] protected LevelAbstract level;
+  public LevelAbstract Level => level;
   
     protected override void LoadComponents()
     {
@@ -33,6 +36,13 @@ public class PlayerCtrl : SaiMonoBehaviour
         this.LoadAimingRig();
         this.LoadAnimator();
         this.LoadWeapons();
+        this.LoadLevel();
+    }
+    protected virtual void LoadLevel()
+    {
+        if (this.level != null) return;
+        this.level = GetComponentInChildren<LevelAbstract>();
+        Debug.Log(transform.name + " :LoadLevel ",gameObject);
     }
 
     protected virtual void LoadThirdPersonController()
@@ -43,13 +53,15 @@ public class PlayerCtrl : SaiMonoBehaviour
        Debug.Log(transform.name + " :LoadThirdPersonControlle ",gameObject);
     }
     
-    
-    
     protected virtual void LoadThirdPersonCamera()
     {
         if (this.thirdPersonCamera != null) return;
         this.thirdPersonCamera = FindAnyObjectByType<vThirdPersonCamera>();
-       
+        this.thirdPersonCamera.rightOffset = 0.6f;
+        this.thirdPersonCamera.defaultDistance = 1.2f;
+        this.thirdPersonCamera.height = 1.3f;
+        this.thirdPersonCamera.yMinLimit = -40f;
+        this.thirdPersonCamera.yMaxLimit = 40f;
         Debug.Log(transform.name + " :LoadThirdPersonCamera ",gameObject);
     }
     

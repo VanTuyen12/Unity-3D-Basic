@@ -6,7 +6,7 @@ namespace Paths
 {
     public class PathsManager : SaiSingleton<PathsManager>
     {
-        [SerializeField]List<Path> paths = new List<Path>();
+        [SerializeField]List<PathMoving> paths = new();
 
         protected override void Awake()
         {
@@ -26,7 +26,7 @@ namespace Paths
 
             foreach (Transform child in transform)
             {
-                Path path = child.GetComponent<Path>();
+                PathMoving path = child.GetComponent<PathMoving>();
                 path.LoadPoints();//Goi loadPoint cho tien cx dc
                 this.paths.Add(path);
             }
@@ -34,14 +34,14 @@ namespace Paths
             Debug.Log(transform.name + ":LoadPaths" , gameObject);
         }
 
-        public virtual Path GetPath(int index)//Tim Kiem bang Index
+        public virtual PathMoving GetPath(int index)//Tim Kiem bang Index
         {
             return this.paths[index];
         }
 
-        public virtual Path GetPath(string pathName) // Tim kiem bang Name Path
+        public virtual PathMoving GetPath(string pathName) // Tim kiem bang Name Path
         {
-            foreach (Path path in this.paths)
+            foreach (PathMoving path in this.paths)
             {
                 if (path.name == pathName)
                     return path;

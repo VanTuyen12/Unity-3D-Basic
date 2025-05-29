@@ -4,7 +4,11 @@ using UnityEngine;
 public abstract class DamageRecever : SaiMonoBehaviour
 {
    protected int maxHP = 10;
+   public int MaxHP => maxHP;
+   
    protected int currrentHP = 10;
+   public int CurrentHP => currrentHP;
+   
    protected bool isDead = false;
    [SerializeField] protected bool isImmotal = false;
 

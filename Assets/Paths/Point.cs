@@ -24,6 +24,6 @@ public class Point : SaiMonoBehaviour
       }
       
       //Debug.Log(transform.name + " :siblingIndex " + siblingIndex);
-      //Debug.Log(transform.name + " :LoadNextPoint " , gameObject);
+     // Debug.Log(transform.name + " :LoadNextPoint " , gameObject);
    }
 }

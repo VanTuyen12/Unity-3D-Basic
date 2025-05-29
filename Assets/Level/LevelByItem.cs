@@ -17,7 +17,7 @@ public abstract class LevelByItem : LevelAbstract
    // ReSharper disable Unity.PerformanceAnalysis
    protected virtual ItemInventory GetPlayerExp()//Lay lien ket den item PlayerExp
    {
-      Debug.Log("GetPlayerExp");
+      //Debug.Log("GetPlayerExp");
       if (playerExp == null || this.playerExp.ItemID == 0) this.playerExp = InventoryManager.Instance.Monies().FindItem(ItemCode.PlayerExp);
       return this.playerExp;
    }
