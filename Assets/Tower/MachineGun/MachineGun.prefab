@@ -301,12 +301,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   towerCtrl: {fileID: 5870645986076148556}
   target: {fileID: 0}
-  ShootSpeed: 0.2
-  TargetLoadSpeed: 0.2
+  ShootSpeed: 1
+  TargetLoadSpeed: 1
   currentFirePoint: 0
   rotationSpeed: 2
   killCount: 0
   totalKill: 0
+  effectSpawner: {fileID: 0}
 --- !u!1 &5243447279471824895
 GameObject:
   m_ObjectHideFlags: 0
@@ -332,7 +333,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5243447279471824895}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 20.78, y: 1, z: 14.86}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0

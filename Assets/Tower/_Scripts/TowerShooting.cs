@@ -6,8 +6,8 @@ public class TowerShooting : TowerAbstract
 {
     [SerializeField]protected EnemyCtrl target;
     
-    [SerializeField] protected float ShootSpeed = 0.2f;
-    [SerializeField] protected float TargetLoadSpeed = 0.2f;
+    [SerializeField] protected float ShootSpeed = 0.5f;
+    [SerializeField] protected float TargetLoadSpeed = 1f;
     [SerializeField] protected int currentFirePoint = 0;
     [SerializeField]protected float rotationSpeed = 2f;
     [SerializeField]protected int killCount = 0;
@@ -31,6 +31,20 @@ public class TowerShooting : TowerAbstract
         //this.TargetLoading();
         this.IsTargetDead();
     }
+
+    protected override void LoadComponents()
+    {
+        base.LoadComponents();
+        this.LoadEffectSpawner();
+    }
+
+    protected virtual void LoadEffectSpawner()
+    {
+        if(effectSpawner != null) return;
+        effectSpawner = GameObject.Find("EffectSpawner").GetComponent<EffectSpawner>();
+        Debug.Log(transform.name + " :LoadEffectSpawner",gameObject);
+    }
+
 
     protected virtual void TargetLoading()
     {
@@ -94,11 +108,23 @@ public class TowerShooting : TowerAbstract
        
        return firePoint;
     }
-    protected virtual void SpawnBullet(Vector3 spawnPoint, Vector3 rotatorDirection)
+    protected virtual void _OldSpawnBullet(Vector3 spawnPoint, Vector3 rotatorDirection)
     {
         Bullet newBullet = this.towerCtrl.BulletSpanwer.Spawn(this.towerCtrl.Bullet,spawnPoint);//Spawn đạn theo vị trí của Point
         newBullet.transform.forward = rotatorDirection;//gán hướng vtri vien dan bay theo huong quay của Rotator
         newBullet.gameObject.SetActive(true);
+    }
+    
+    protected virtual void SpawnBullet(Vector3 spawnPoint, Vector3 rotatorDirection)
+    {
+        EffectCtrl effect = effectSpawner.PoolPrefabs.GetByName("ProjectTile1");//Lay doi tuong can spawn
+        EffectCtrl newEffect = effectSpawner.Spawn(effect, spawnPoint);//spawn
+        newEffect.transform.forward = rotatorDirection;//quay doi tuong theo truc R
+        
+        EffectFlyAbstract effectFly = (EffectFlyAbstract)newEffect;
+        effectFly.FlyToTarget.SetTarget(target.TowerTagertable.transform);
+        
+        newEffect.gameObject.SetActive(true);
     }
     
     protected virtual void SpawnMuzzle(Vector3 spawnPoint, Vector3 rotatorDirection)

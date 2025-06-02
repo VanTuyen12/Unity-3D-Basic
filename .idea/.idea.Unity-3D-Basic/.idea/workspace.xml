@@ -4,7 +4,61 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e3d728af-7e95-49fa-b551-364df4d89488" name="Changes" comment="" />
+    <list default="true" id="e3d728af-7e95-49fa-b551-364df4d89488" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Unity-3D-Basic/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Unity-3D-Basic/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Enemy/EnemyScripts/EnemyCtrl.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemy/EnemyScripts/EnemyCtrl.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FST/Fixed Machine Gun Turret/Materials/Plane.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FST/Fixed Machine Gun Turret/Materials/Plane.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GabrielAguiarProductions/UniqueProjectilesVol2_2020.3_HDRP_v1.3.unitypackage.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GabrielAguiarProductions/UniqueProjectilesVol2_2020.3_SRP_v1.3.unitypackage.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GabrielAguiarProductions/UniqueProjectilesVol2_2020.3_URP_v1.3.unitypackage.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Invector-3rdPersonController_LITE/3D Models/Characters/Invector@V-Bot 2.0/Material/Custom/Body.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Invector-3rdPersonController_LITE/3D Models/Characters/Invector@V-Bot 2.0/Material/Custom/Body.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Invector-3rdPersonController_LITE/3D Models/Characters/Invector@V-Bot 2.0/Material/Custom/Joints_Inside.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Invector-3rdPersonController_LITE/3D Models/Characters/Invector@V-Bot 2.0/Material/Custom/Joints_Inside.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Invector-3rdPersonController_LITE/3D Models/Characters/Invector@V-Bot 2.0/Material/Custom/Joints_Outside.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Invector-3rdPersonController_LITE/3D Models/Characters/Invector@V-Bot 2.0/Material/Custom/Joints_Outside.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Invector-3rdPersonController_LITE/3D Models/Characters/Invector@V-Bot 2.0/Material/Custom/Members_Metal.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Invector-3rdPersonController_LITE/3D Models/Characters/Invector@V-Bot 2.0/Material/Custom/Members_Metal.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Invector-3rdPersonController_LITE/3D Models/Characters/Invector@V-Bot 2.0/Material/Custom/Members_Plastic.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Invector-3rdPersonController_LITE/3D Models/Characters/Invector@V-Bot 2.0/Material/Custom/Members_Plastic.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Invector-3rdPersonController_LITE/3D Models/Characters/Invector@V-Bot 2.0/Material/Custom/Rubber.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Invector-3rdPersonController_LITE/3D Models/Characters/Invector@V-Bot 2.0/Material/Custom/Rubber.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Invector-3rdPersonController_LITE/3D Models/Characters/Invector@V-Bot 2.0/Material/Custom/V.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Invector-3rdPersonController_LITE/3D Models/Characters/Invector@V-Bot 2.0/Material/Custom/V.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Invector-3rdPersonController_LITE/3D Models/Others/Materials/blue_cube_simple.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Invector-3rdPersonController_LITE/3D Models/Others/Materials/blue_cube_simple.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Invector-3rdPersonController_LITE/3D Models/Others/Materials/invector-icon-black.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Invector-3rdPersonController_LITE/3D Models/Others/Materials/invector-icon-black.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Invector-3rdPersonController_LITE/3D Models/Others/Materials/invector-icon-dark-gray.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Invector-3rdPersonController_LITE/3D Models/Others/Materials/invector-icon-dark-gray.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Invector-3rdPersonController_LITE/3D Models/Others/Materials/invector-icon-light-gray.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Invector-3rdPersonController_LITE/3D Models/Others/Materials/invector-icon-light-gray.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Invector-3rdPersonController_LITE/3D Models/Others/Materials/invector-icon-white.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Invector-3rdPersonController_LITE/3D Models/Others/Materials/invector-icon-white.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Invector-3rdPersonController_LITE/3D Models/Textures/basicTextures/Materials/MeleeBanner.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Invector-3rdPersonController_LITE/3D Models/Textures/basicTextures/Materials/MeleeBanner.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Invector-3rdPersonController_LITE/3D Models/Textures/basicTextures/Materials/ShooterBanner.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Invector-3rdPersonController_LITE/3D Models/Textures/basicTextures/Materials/ShooterBanner.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Invector-3rdPersonController_LITE/3D Models/Textures/basicTextures/Materials/frameborder_b.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Invector-3rdPersonController_LITE/3D Models/Textures/basicTextures/Materials/frameborder_b.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Invector-3rdPersonController_LITE/3D Models/Textures/basicTextures/Materials/locomotion_statuePlate.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Invector-3rdPersonController_LITE/3D Models/Textures/basicTextures/Materials/locomotion_statuePlate.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Invector-3rdPersonController_LITE/3D Models/Textures/prototype_textures/Materials/door_blue.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Invector-3rdPersonController_LITE/3D Models/Textures/prototype_textures/Materials/door_blue.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Invector-3rdPersonController_LITE/3D Models/Textures/prototype_textures/Materials/door_green.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Invector-3rdPersonController_LITE/3D Models/Textures/prototype_textures/Materials/door_green.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Invector-3rdPersonController_LITE/3D Models/Textures/prototype_textures/Materials/door_red.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Invector-3rdPersonController_LITE/3D Models/Textures/prototype_textures/Materials/door_red.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Invector-3rdPersonController_LITE/3D Models/Textures/prototype_textures/Materials/ladder_Metal.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Invector-3rdPersonController_LITE/3D Models/Textures/prototype_textures/Materials/ladder_Metal.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Invector-3rdPersonController_LITE/3D Models/Textures/prototype_textures/Materials/proto_gray.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Invector-3rdPersonController_LITE/3D Models/Textures/prototype_textures/Materials/proto_gray.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Invector-3rdPersonController_LITE/3D Models/Textures/prototype_textures/Materials/proto_orange.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Invector-3rdPersonController_LITE/3D Models/Textures/prototype_textures/Materials/proto_orange.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Invector-3rdPersonController_LITE/3D Models/Textures/prototype_textures/Materials/proto_red.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Invector-3rdPersonController_LITE/3D Models/Textures/prototype_textures/Materials/proto_red.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Invector-3rdPersonController_LITE/3D Models/Textures/prototype_textures/Materials/statue_blue.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Invector-3rdPersonController_LITE/3D Models/Textures/prototype_textures/Materials/statue_blue.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Invector-3rdPersonController_LITE/3D Models/Textures/prototype_textures/blue_floor_Tiled 1.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Invector-3rdPersonController_LITE/3D Models/Textures/prototype_textures/blue_floor_Tiled 1.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Invector-3rdPersonController_LITE/Invector_BasicLocomotion/LightingData.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Invector-3rdPersonController_LITE/Invector_BasicLocomotion/LightingData.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Invector-3rdPersonController_LITE/Invector_BasicLocomotion/LightingData.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Invector-3rdPersonController_LITE/Invector_BasicLocomotion/LightingData.asset.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Invector-3rdPersonController_LITE/Invector_BasicLocomotion/ReflectionProbe-0.exr" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Invector-3rdPersonController_LITE/Invector_BasicLocomotion/ReflectionProbe-0.exr" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Invector-3rdPersonController_LITE/Invector_BasicLocomotion/ReflectionProbe-0.exr.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Invector-3rdPersonController_LITE/Invector_BasicLocomotion/ReflectionProbe-0.exr.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Invector-3rdPersonController_LITE/Invector_BasicLocomotion/ReflectionProbe-1.exr.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Invector-3rdPersonController_LITE/Invector_BasicLocomotion/ReflectionProbe-1.exr.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Invector-3rdPersonController_LITE/Resources/Materials/comparacao.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Invector-3rdPersonController_LITE/Resources/Materials/comparacao.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Meterial/Cube.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Meterial/Cube.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Meterial/Enemy.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Meterial/Enemy.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Meterial/Green_Material.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Meterial/Green_Material.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Player/Skills/Scripts/AttackLight.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Player/Skills/Scripts/AttackLight.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/vfx_Muzzle_Trail02_Orange(Clone).prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/vfx_Muzzle_Trail02_Orange(Clone).prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/vfx_Projectile_Slash01_Orange(Clone).prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/vfx_Projectile_Slash01_Orange(Clone).prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tower/MachineGun/MachineGun.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Tower/MachineGun/MachineGun.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tower/_Scripts/TowerShooting.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Tower/_Scripts/TowerShooting.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/YughuesFreeMetalMaterials/YughuesFreeMetalMaterials_HDRP.unitypackage.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/YughuesFreeMetalMaterials/YughuesFreeMetalMaterials_URP.unitypackage.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/URPProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/URPProjectSettings.asset" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -27,21 +81,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "CodeLensConfigurable",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="D:\Unity Hub\Unity\Hub\Editor\6000.0.44f1\Editor\Unity.exe" />
@@ -99,6 +153,8 @@
       <workItem from="1747191580623" duration="10550000" />
       <workItem from="1748241317651" duration="3901000" />
       <workItem from="1748280082413" duration="2993000" />
+      <workItem from="1748850598940" duration="6921000" />
+      <workItem from="1748859226614" duration="2527000" />
     </task>
     <servers />
   </component>

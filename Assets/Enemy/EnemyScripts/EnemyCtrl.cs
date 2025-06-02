@@ -45,7 +45,7 @@ public abstract class EnemyCtrl : PoolObj
         if (this.towerTagertable != null) return;
 
         this.towerTagertable = transform.GetComponentInChildren<TowerTagertable>();
-        towerTagertable.transform.localPosition = new Vector3(0f, 0.5f, 0f);
+        towerTagertable.transform.localPosition = new Vector3(0f, 1f, 0f);
 
         Debug.Log(transform.name + " LoadModel : ", gameObject);
     }
